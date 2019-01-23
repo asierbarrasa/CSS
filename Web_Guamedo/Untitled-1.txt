@@ -1,0 +1,37 @@
+    function fadeOut(){
+
+        TweenMax.to(".btn", 1,{
+        y: -200,
+        opacity:0
+        });
+
+        TweenMax.to(".screen", 2,{
+            y: -400,
+            opacity:0,
+            ease: Power2.easeInOut,
+            delay: 1
+            });
+
+            TweenMax.to(".overlay", 2,{
+                ease: Power2.easeInOut,
+                });
+
+                TweenMax.to(".overlay", 2,{
+                    delay:1,
+                    top:"-100%",
+                    ease: Power2.easeInOut
+                    });
+
+             
+                        TweenMax.to(".s2", 1,{
+                            delay:1.5,
+                            y:"-200%",
+                            ease: Power2.easeInOut
+                            });  
+
+                        
+
+
+
+
+    }

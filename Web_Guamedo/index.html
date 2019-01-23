@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="master.css" />
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="sections.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <section class="s1">
+        <div class="overlay">
+            <p class="screen">Guamedo</p>
+            <button class="btn" onclick="fadeOut()">Entrar</button>
+            <div class="middle">
+                <div class="mouse"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s2">
+        <div class="overlay">
+            <div class="show-login-btn show-login-btn_generic"> Proyecto 1</div>
+            <div class="login-box login-box_generic">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, qui.</h1>
+                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur sequi eos alias corporis ullam
+                    quia modi! Ea optio unde labore excepturi. Tempore eius ex nisi doloribus eligendi eum natus, a,
+                    magni totam distinctio quidem reprehenderit adipisci sint repudiandae at id repellendus. Aut
+                    voluptatum aliquam sunt molestiae animi velit quod iste?</h2>
+                <h1><a href="" class="social"><i class="fab fa-github"></i></a></h1>
+                <div class="hide-login-btn"><i class="fas fa-times"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s3">
+        <div class="show-login-btn2 show-login-btn_generic">Proyecto 2</div>
+        <div class="login-box2 login-box_generic">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, qui.</h1>
+            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur sequi eos alias corporis ullam
+                quia modi! Ea optio unde labore excepturi. Tempore eius ex nisi doloribus eligendi eum natus, a,
+                magni totam distinctio quidem reprehenderit adipisci sint repudiandae at id repellendus. Aut
+                voluptatum aliquam sunt molestiae animi velit quod iste?</h2>
+            <h1><a href="" class="social"><i class="fab fa-github"></i></a></h1>
+            <div class="hide-login-btn2"><i class="fas fa-times"></i></div>
+        </div>
+        <div class="middle2">
+            <div class="mouse2"></div>
+        </div>
+    </section>
+
+
+    <section class="s4">
+        <div class="show-login-btn_generic show-login-btn3 ">Proyecto 3</div>
+        <div class="login-box3 login-box_generic">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, qui.</h1>
+            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur sequi eos alias corporis ullam
+                quia modi! Ea optio unde labore excepturi. Tempore eius ex nisi doloribus eligendi eum natus, a,
+                magni totam distinctio quidem reprehenderit adipisci sint repudiandae at id repellendus. Aut
+                voluptatum aliquam sunt molestiae animi velit quod iste?</h2>
+            <h1><a href="" class="social"><i class="fab fa-github"></i></a></h1>
+            <div class="hide-login-btn3"><i class="fas fa-times"></i></div>
+        </div>
+    </section>
+
+
+
+
+    </div>
+
+    <script type="text/javascript">
+        $(".show-login-btn").on("click", function () {
+            $(".login-box").toggleClass("showed");
+
+        });
+        $(".hide-login-btn").on("click", function () {
+            $(".login-box").toggleClass("showed");
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(".show-login-btn2").on("click", function () {
+            $(".login-box2").toggleClass("showed");
+
+        });
+        $(".hide-login-btn2").on("click", function () {
+            $(".login-box2").toggleClass("showed");
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(".show-login-btn3").on("click", function () {
+            $(".login-box3").toggleClass("showed");
+
+        });
+        $(".hide-login-btn3").on("click", function () {
+            $(".login-box3").toggleClass("showed");
+
+        });
+    </script>
+
+    <script>
+        function fadeOut() {
+            document.querySelector('.s2').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

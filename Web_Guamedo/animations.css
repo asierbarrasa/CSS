@@ -1,0 +1,101 @@
+.middle {
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mouse {
+    width: 50px;
+    height: 90px;
+    border: 2px solid white;
+    border-radius: 60px;
+}
+
+.mouse::before {
+    content: "";
+    width: 12.5px;
+    height: 12.5px;
+    position: absolute;
+    top: 30px;
+    background: white;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    opacity: 1;
+    animation: mouse 2s infinite;
+}
+
+@keyframes mouse {
+    from {
+        opacity: 1;
+        top: 20px;
+    }
+
+    to {
+        opacity: 0;
+        top: 80px;
+
+    }
+}
+
+
+
+
+
+
+.middle2 {
+    position: absolute;
+    top: 280%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mouse2 {
+    width: 50px;
+    height: 90px;
+    border: 2px solid white;
+    border-radius: 60px;
+}
+
+.mouse2::before {
+    content: "";
+    width: 12.5px;
+    height: 12.5px;
+    position: absolute;
+    top: 30px;
+    background: white;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    opacity: 1;
+    animation: mouse 2s infinite;
+}
+
+.middle3 {
+    position: absolute;
+    top: 380%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mouse3 {
+    width: 50px;
+    height: 90px;
+    border: 2px solid white;
+    border-radius: 60px;
+}
+
+.mouse3::before {
+    content: "";
+    width: 12.5px;
+    height: 12.5px;
+    position: absolute;
+    top: 30px;
+    background: white;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    opacity: 1;
+    animation: mouse 2s infinite;
+}
